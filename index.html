@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Bitcoin QR Code Generator</title>
+
+		<meta name="description" content="Bitcoin QR code generator.">
+		<meta name="keywords"    content="bitcoin, litecoin, qr, generator, tool">
+
+		<link rel="stylesheet" href="lib/foundation/foundation.min.css">
+		<link rel="stylesheet" href="css/bitcoinqrcode.css">
+	</head>
+	<body>
+    <div class="row">
+		<div class="large-12 columns">
+			<h1>Bitcoin QR Code Generator</h1>
+
+			<p>Click a <a href="http://en.wikipedia.org/wiki/QR_code">QR code</a> to upload it to <a href="http://imgur.com">Imgur</a>. Find out more about <a href="http://bitcoin.org/">Bitcoin</a>.</p>
+
+			<form method="post">
+				<div class="row">
+					<div class="large-9 columns">
+						<label for="address">Bitcoin address:</label>
+
+						<input id="address" type="text" placeholder="18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4">
+					</div>
+					<div class="large-3 columns">
+						<label for="size">Size (px):</label>
+
+						<input id="size" type="text" placeholder="250" value="250">
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label for="amount">Amount (in BTC):</label>
+
+						<input id="amount" type="text" placeholder="0.00000000">
+					</div>
+				</div>
+			</form>
+
+			<div id="qrcodes"></div>
+
+			<hr>
+
+			<footer>
+
+				By <a href="http://alias.io">Elbert Alias</a>. Donate Bitcoin: 18Vm8AvDr9Bkvij6UfVR7MerCyrz3KS3h4 <em>&mdash; Thanks!</em>
+
+				<br><br>
+
+				<img src="img/donate.png">
+			<footer>
+
+			<div id="qrcode"></div>
+		</div>
+
+		<a id="fork" href="https://github.com/ElbertF/BitcoinQRCode.org">Fork me on Github</a>
+
+		<script src="lib/jquery/jquery-2.0.3.min.js"></script>
+		<script src="lib/jquery-qrcode/src/qrcode.js"></script>
+		<script src="lib/jquery-qrcode/src/jquery.qrcode.js"></script>
+		<script src="js/bitcoinqrcode.js"></script>
+	</body>
+</html>
